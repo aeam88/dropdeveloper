@@ -1,31 +1,54 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <header-component />
     <router-view/>
+    <footer-component />
   </div>
 </template>
+<script>
+  import HeaderComponent from '@/components/Header';
+  import FooterComponent from '@/components/Footer';
 
+  export default {
+    components: {
+      HeaderComponent,
+      FooterComponent
+    }
+  }
+</script>
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  body {
+    width:100%;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: normal;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  a {
+    outline:none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  .container {
+    width:80%;
+    margin:0 auto;
+  }
+
+  /* MEDIA QUERYS */
+
+  @media (max-width: 676px) {
+      .container {
+          width: 90%;
+      }
+  }
+
 </style>

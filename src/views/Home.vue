@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="img-back-all">
+        <cabecera />
+        <learning />
+        <posts />
+    </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import Cabecera from '../components/Cabecera';
+import Posts from '../components/Posts';
+import Learning from '../components/Learning';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Cabecera,
+    Learning,
+    Posts
   }
 }
 </script>
+
+<style>
+  .img-back-all {
+      width: 100%;
+      background-image: url(../assets/img/nubes2.png);
+      background-repeat: no-repeat;
+      background-position: top;
+  }
+</style>

@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Cursos from './views/Cursos.vue'
+import Tutoriales from './views/Tutoriales.vue'
+import Planes from './views/Planes.vue'
+import Articulos from './views/Articulos.vue'
 
 Vue.use(Router)
 
@@ -12,6 +16,26 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/cursos',
+      name: 'cursos',
+      component: Cursos
+    },
+    {
+      path: '/tutoriales',
+      name: 'tutoriales',
+      component: Tutoriales
+    },
+    {
+      path: '/planes',
+      name: 'planes',
+      component: Planes
+    },
+    {
+      path: '/articulos',
+      name: 'articulos',
+      component: Articulos
     },
     {
       path: '/about',
