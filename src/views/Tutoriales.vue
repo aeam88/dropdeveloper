@@ -1,13 +1,13 @@
 <template>
     <div>
         <titulo-seccion :titulo="titulo" :subtitulo="subtitulo" />
-        <listas-aprender />
+        <listas-tutoriales />
     </div>
 </template>
 
 <script>
     import TituloSeccion from '../components/TituloSeccion';
-    import ListasAprender from '../components/ListasAprender';
+    import ListasTutoriales from '../components/ListasTutoriales';
 
     export default {
         data () {
@@ -18,7 +18,7 @@
         },
         components: {
             TituloSeccion,
-            ListasAprender
+            ListasTutoriales
         }
     }
 </script>

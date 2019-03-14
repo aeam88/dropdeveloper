@@ -42,6 +42,15 @@
         .foot-right a svg {
             width: 70px;
             height: 70px;
+            margin-top: 1.5em;
+        }
+
+        .d-flex-footer {
+            flex-direction: column;
+        }
+
+        .foot-left {
+            text-align: center;
         }
     }
 </style>

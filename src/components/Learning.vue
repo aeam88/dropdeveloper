@@ -273,5 +273,19 @@
         }
     }
 
+    @media (max-width: 500px) {
+        .content-box {
+            flex-direction: column;
+        }
+
+        .content-box-cursos {
+            flex-direction: column;
+        }
+
+        .content-tut-text p {
+            font-size: .9em;
+        }
+    }
+
 </style>
 

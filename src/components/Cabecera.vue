@@ -143,5 +143,19 @@
         .heding-text h1 {
             font-size: 2.2em;
         }
+
+        .main-btns-slide {
+            margin-top: 9em;
+        }
+
+        .btn-ver-cursos {
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn-suscripcion {
+            width: 100%;
+            text-align: center;
+        }
     }
 </style>

@@ -12,12 +12,23 @@
                     </ul>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#">Registro</a></li>
-                    <li><a href="#" class="login-btn">Login</a></li>
-                    <li class="mobile-nav"><a href="#"><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
+                    <li class="mobile-nav-dos"><a href="#">Registro</a></li>
+                    <li class="mobile-nav-dos"><a href="#" class="login-btn">Login</a></li>
+                    <li class="mobile-nav"><a @click="mostrarNav()" href="#"><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
                 </ul>
 			</nav>
-        </div>  
+            <div class="nav-responsive" v-if="showNavResponsive">
+                <ul class="nav-links-responsive">
+                    <li><router-link to="/cursos">Cursos</router-link></li>
+                    <li><router-link to="/tutoriales">Tutoriales</router-link></li>
+                    <li><router-link to="/planes">Planes</router-link></li>
+                    <li><router-link to="/articulos">Artículos</router-link></li>
+                    <li><a  href="#">Registro</a></li>
+                    <li><a  href="#">Login</a></li>
+                </ul>
+            </div>
+
+        </div> 
     </header>
 </template>
 
@@ -25,11 +36,22 @@
     import Logo from './Logo';
 
     export default {
+        data () {
+            return {
+                showNavResponsive: false
+            }
+        },
         components: {
             Logo
+        },
+        methods: {
+            mostrarNav() {
+                this.showNavResponsive = !this.showNavResponsive; 
+            },
         }
     }
 </script>
+
 
 <style>
     .main-nav {
@@ -99,6 +121,29 @@
         display: none;
     }
 
+    .nav-links-responsive {
+        margin-top: 2em;
+    }
+
+    .nav-links-responsive li {
+        list-style: none;
+        display: flex;
+        padding: 1em;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    .nav-links-responsive li a {
+        width: 100%;
+        text-decoration: none;
+        color: #c8b9da;
+        text-align: left;
+    }
+
+    .nav-links-responsive li:hover {
+        background-color: #763eff;
+    }
+
     /* MEDIA QUERYS */
 
     @media (max-width: 976px) {
@@ -121,5 +166,13 @@
             padding: 5px 1em;
         }
     }
+
+    @media (max-width: 600px) {
+        .mobile-nav-dos {
+            display: none;
+        }
+    }
+
+
 </style>
 

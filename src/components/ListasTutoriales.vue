@@ -17,34 +17,34 @@
             return {
                 infoCursos: [
                     {
-                        imagenAprender: require('../assets/img/tutounobig6.png'),
+                        imagenAprender: require('../assets/img/tutunobig2.png'),
                         tipo: "Front - End",
-                        titulo: "Angular 7",
-                        isCurso: true,
+                        titulo: "CryptoApp Vue",
+                        isCurso: false,
                         videos: 8,
-                        duracion: 120,
+                        duracion: 56,
                         nivel: "Novato",
-                        descripcion: "Este completo curso de Angular en su última versión te llevará desde los conceptos más básicos hasta los más avanzados."
+                        descripcion: "Aprender Vue Js desde 0 desarrollando esta aplicación. Todos los conceptos básicos para que puedas seguir adentrandote en este framework."
                     },
                     {
-                        imagenAprender: require('../assets/img/tutounobig5.png'),
+                        imagenAprender: require('../assets/img/tutounobig3.png'),
                         tipo: "Mobile",
-                        titulo: "Ionic 4",
-                        isCurso: true,
-                        videos: 16,
-                        duracion: 150,
+                        titulo: "New's App",
+                        isCurso: false,
+                        videos: 4,
+                        duracion: 45,
                         nivel: "Intermedio",
-                        descripcion: "Aprende este framework de desarrollo para aplicaciones hibridas en su última versión revisa sus componentes y como integrarlos."
+                        descripcion: "Construimos esta espectacular aplicación móvil con react native. Aprende a comunicarte con Api's externas y más."
                     },
                     {
-                        imagenAprender: require('../assets/img/tutounobig6.png'),
+                        imagenAprender: require('../assets/img/tutounobig4.png'),
                         tipo: "Front - End",
-                        titulo: "ChatApp Angular y Firebase",
-                        isCurso: true,
+                        titulo: "Bulma Css desde 0",
+                        isCurso: false,
                         videos: 2,
-                        duracion: 74,
+                        duracion: 56,
                         nivel: "Avanzado",
-                        descripcion: "Crea una aplicación de chat con Angular y firebase. Aprende a integrar estas tecnilogías para desarrollar poderosas aplicaciones."
+                        descripcion: "Conoce este framework de Css. Crearemos una landing Page desde 0, repasaremos una gran cantidad de componentes."
                     }
                 ]
             }
